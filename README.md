@@ -18,6 +18,18 @@
 |HATENABLOG_ACCESS_TOKEN| |
 |HATENABLOG_ACCESS_TOKEN_SECRET| |
 
+- bin/entries.rb
+
+ファイル内でも修正が必要(49 - 51)
+
+RSS内で使用するため適切な説明などを入れる
+
+```
+SITE_TITLE = '' # サイトタイトル
+SITE_DESCRIPTION = '' # サイト説明
+SITE_URL = '' # e.g.) https://swfz.hatenablog.com/
+```
+
 ### Execution
 
 はてなブログのユーザー名、ドメインが引数で必要なのでそれぞれ渡す
@@ -32,6 +44,6 @@ ruby bin/entries.rb ${HATENABLOG_USERNAME} ${HATENABLOG_DOMAIN}
 仕組み上すべてのエントリーをとってくるようになってるので記事数が多い場合、APIリクエスト数が結構行く可能性があるので注意が必要です
 
 ## 気が向いたらやるかも
+- リファクタリング
 - RSSファイルの定期出力
 - XMLファイルのデプロイ
-
