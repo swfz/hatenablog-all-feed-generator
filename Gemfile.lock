@@ -1,0 +1,38 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (6.1.4.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
+    ansi (1.5.0)
+    ast (2.4.2)
+    awesome_print (1.9.2)
+    concurrent-ruby (1.1.9)
+    i18n (1.8.10)
+      concurrent-ruby (~> 1.0)
+    minitest (5.14.4)
+    oauth (0.5.6)
+    oga (3.3)
+      ast
+      ruby-ll (~> 2.1)
+    ruby-ll (2.1.2)
+      ansi
+      ast
+    tzinfo (2.0.4)
+      concurrent-ruby (~> 1.0)
+    zeitwerk (2.5.1)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  activesupport
+  awesome_print
+  oauth
+  oga
+
+BUNDLED WITH
+   2.2.30
